@@ -1,0 +1,36 @@
+{
+  "name": "babel-plugin-safari-for-in-workaround",
+  "version": "1.0.0",
+  "description": "Workaround for safari 15 for..in bug",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/savrcom/babel-plugin-safari-for-in-workaround",
+    "directory": "."
+  },
+  "homepage": "https://github.com/savrcom/babel-plugin-safari-for-in-workaround",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./src/index.js",
+  "keywords": [
+    "babel-plugin"
+  ],
+  "dependencies": {
+    "@babel/helper-plugin-utils": "workspace:^"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.0.0-0"
+  },
+  "devDependencies": {
+    "@babel/core": "workspace:^",
+    "@babel/helper-plugin-test-runner": "workspace:^"
+  },
+  "engines": {
+    "node": ">=6.9.0"
+  },
+  "contributors": [
+    "The Babel Team (https://babel.dev/team)",
+    "SAVR AB (https://github.com/savrcom/)"
+  ]
+}

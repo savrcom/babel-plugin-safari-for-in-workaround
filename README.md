@@ -26,7 +26,7 @@ The following browsers seems to be affected:
 ```js
 // variant 1 - block body
 for (var key in obj) {
-    foo(key);
+  foo(key);
 }
 
 // variant 2 - expression body
@@ -38,28 +38,13 @@ for (var key in obj) foo(key);
 ```js
 // variant 1 - block body
 for (let _keys = Object.keys(obj), _i = 0; _i < _keys.length; _i++) {
-    var key = _keys[_i];
-    foo(key);
+  var key = _keys[_i];
+  foo(key);
 }
 
 // variant 2 - expression body
 for (let _keys2 = Object.keys(obj), _i2 = 0; _i2 < _keys2.length; _i2++) {
-    var key = _keys2[_i2];
-    foo(key);
+  var key = _keys2[_i2];
+  foo(key);
 }
-```
-
-
-## Install
-
-Using npm:
-
-```sh
-npm install --save-dev babel-plugin-safari-for-in-workaround
-```
-
-or using yarn:
-
-```sh
-yarn add babel-plugin-safari-for-in-workaround --dev
 ```

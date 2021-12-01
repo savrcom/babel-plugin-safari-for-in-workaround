@@ -2,7 +2,9 @@
 
 ## Important!
 
-This plugin is highly experimental at the moment, and the authors do not take any responsibility for any consequences of its usage.
+This plugin is highly experimental, and the authors do not take any responsibility for any consequences of its usage.
+
+This repository might be removed in the future, so don't rely on it's existence. Fork it if you depend on it for anything important.
 
 The rewrite is _not_ fully equivalent and is likely to break some javascript code. The intention of the plugin is to rewrite the output of the elm-compiler to workaround the bug mentioned below, and it seems to do the job so far.
 

@@ -19,7 +19,7 @@ The main use case for this is to circumvent a bug in webkit as described [here](
 The following browsers seems to be affected:
 
 - Safari 15.0, 15.1
-- Safari/webkit on iOS 15
+- Safari/webkit on iOS 15.0, 15.1
 
 ## Example transform
 

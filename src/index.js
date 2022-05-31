@@ -12,8 +12,6 @@ module.exports = ({ types: t }) => {
           const i = scope.generateUidIdentifier("i");
           const keys = scope.generateUidIdentifier("keys");
 
-          let array = scope.maybeGenerateMemoised(right, true);
-
           const inits = [
             t.variableDeclarator(keys, t.callExpression(
               t.identifier("Object.keys"),
@@ -21,11 +19,6 @@ module.exports = ({ types: t }) => {
               )),
             t.variableDeclarator(i, t.numericLiteral(0))
           ];
-          if (array) {
-            inits.push(t.variableDeclarator(array, right));
-          } else {
-            array = right;
-          }
 
           const item = t.memberExpression(
             t.cloneNode(keys),
